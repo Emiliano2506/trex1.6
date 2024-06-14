@@ -1,0 +1,41 @@
+<!DOCTYPE html><html><head>
+    <script src="./Librerias/p5.js"></script>
+    <script src="./Librerias/p5.dom.min.js"></script>
+    <script src="./Librerias/p5.sound.min.js"></script>
+<script src="./Librerias/./p5.play.js"></script>
+    <link rel= "stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+  </head>
+  <body>
+    <div>
+      <h1>
+        Juego de Tirex
+      </h1>
+      <br>
+      <input type="text"placeholder="User Name" id="UserName" name="User Name">
+      <br>
+      <button onclick="nombreDelJugador()" id="paJugar">
+        Jugar
+      </button>
+    </div>
+  </head>
+      <script src="sketch.js"></script>
+    <script>
+
+var firebaseConfig = {
+  apiKey: "AIzaSyC5F7LnaomjRS0unZmT0Htac2kFnkkPNN4",
+  authDomain: "base-de-datos-9b913.firebaseapp.com",
+  projectId: "base-de-datos-9b913",
+  storageBucket: "base-de-datos-9b913.appspot.com",
+  messagingSenderId: "305095669474",
+  appId: "1:305095669474:web:2507df08b636af839f50bb"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+    </script>
+
+</body></html>
